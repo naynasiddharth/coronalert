@@ -1,0 +1,158 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:Century Gothic;
+}
+/* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+      height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+      height: 80%;
+      margin-top: 30px;
+      padding: 0;
+    }
+    .topnav{
+      float:right;
+      list-style-type:none;
+      display:inline-block;
+      position:absolute;
+      top:0px;
+      background-color:#cfffbd;
+      width:100%;
+      margin:0;
+      padding-top:20px;
+      padding-bottom:15px;
+
+    }
+    .top{
+      font-size:20px;
+      text-decoration: none;
+      color:##ffea70;
+      padding-left:20px;
+
+      width:100%;
+      margin:0;
+    }
+    .top:hover{
+      background-color:#fff;
+      color:#000;
+    }
+    .description{
+      font-size:20px;
+      width:800px;
+    }
+    .question{
+      font-size:30px;
+      color:rgb(66, 20, 76);
+      padding-top:20px;
+      margin-left:10px;
+    }
+    .marginHeaders {
+      font-size: 23px;
+      margin-left:17px;
+    }
+    .fireWords{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:15px;
+      color:rgb(255, 191, 73);
+      padding-top:20px;
+      margin-left: 15px;
+    }
+    .floodWords{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:15px;
+      color:rgb(19, 78, 150);
+      padding-top:20px;
+      margin-left: 15px;
+    }
+    .coronawords{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:20px;
+      color:rgb(36, 81, 19);
+      padding-top:20px;
+      margin-left: 15px;
+    }
+    .imageteam{
+      width: 100vw;
+      height: 15vw;
+    }
+    .logo{
+      width: 100vw;
+      height: 20vw;
+    }
+    .imageicons{
+      border-radius:30%;
+      width: 100px;
+      height: 100px;
+    }
+
+  }
+     .faq{
+       margin:20px;
+       margin-bottom:30px;
+     }
+     .titles{
+       font-size:35px;
+       text-align:center;
+       padding-top:10px;
+       color:rgb(48, 48, 107);
+     }
+     .indexdetails{
+       color:rgb(164, 164, 165);
+       text-align:center;
+       padding-left:100px;
+       padding-right:100px;
+       padding-bottom:30px;
+     }
+     .video{
+       position:absolute;
+       padding-left:10px;
+       left:10px;
+     }
+     .icons{
+       display:inline-block;
+       position:absolute;
+       left:50%;
+
+     }
+     .icons img{
+       width:150px;
+       height:150px;
+       border-radius:50%;
+       padding-left:50px;
+     }
+     .indexdetailss{
+       position:absolute;
+       right:80px;
+       width:530px;
+       top:125%;
+       color:rgb(164, 164, 165);
+     }
+     .moreinfo{
+       position:absolute;
+       top:150%;
+       background-color:#cfffbd;
+       width:100%;
+       font-size:100px;
+       color:#ffea70;
+
+     }
+   .lessinfo{
+     position:absolute;
+     top:170%;
+     left:30px;
+   }
+
+  /*#showcase{
+  margin-bottom: 0px;
+  min-height:400px;
+  background:url('') no-repeat 0 -400px;
+  text-align:center;
+  color:#ffffff;
+} */
+
+
+5335 sans-serif Noto serif

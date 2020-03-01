@@ -1,0 +1,65 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styleLancer.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet" type="text/css">
+
+</head>
+<div class="topnav">
+  <a href="index.html" class="top">Home</a>
+  <a href="corona.html" class="top">Coronavirus</a>
+  <a href="flu.html" class="top">Flu</a>
+  <a href="about.html" class="top">About</a>
+
+</div>
+<body>
+  <div id="map">
+  </div>
+  <!-- creating a map -->
+  <script>
+
+  function initMap() {
+    var myLatLng = {lat: 35.7000, lng: -120.0060};
+
+    var beaconsMap = new google.maps.Map(document.getElementById('map'), {
+      zoom: 7,
+      center: myLatLng
+    });
+
+    var marker;
+
+    google.maps.event.addListener(beaconsMap, 'click', function(event) {
+
+      placeMarker(event.latLng);
+
+    });
+
+    function placeMarker(location) {
+
+        marker = new google.maps.Marker({
+          position: location,
+          map: beaconsMap,
+          icon: {
+            url: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png"
+            }
+
+        }); }
+      }
+    </script>
+    <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEGT_AaHzBL33Jle1igZbx91tie25fl8w&callback=initMap">
+  </script>
+
+  <br /> <br />
+  <h1 class="question"> Here is some information on what to do in case of a fire</h1>
+  <p class="fireWords">
+    -Know how to safely operate a fire extinguisher<br>
+    </br>-Remember to GET OUT, STAY OUT and CALL 9-1-1 or your local emergency phone number.<br>
+    </br>-Yell "Fire!" several times and go outside right away. If you live in a building with elevators, use the stairs. Leave all your things where they are and save yourself.<br>
+    </br>-If closed doors or handles are warm or smoke blocks your primary escape route, use your second way out. Never open doors that are warm to the touch.<br>
+    </br>-If you must escape through smoke, get low and go under the smoke to your exit. Close doors behind you.<br>
+    <br>-If smoke, heat or flames block your exit routes, stay in the room with doors closed. Place a wet towel under the door and call the fire department or 9-1-1.      Open a window and wave a brightly colored cloth or flashlight to signal for help.<br>
+    <br>-Once you are outside, go to your meeting place and then send one person to call the fire department. If you cannot get to your meeting place, follow your family emergency communication plan.
+  </p>
+  </html>
+
+</body>

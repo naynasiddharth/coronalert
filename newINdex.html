@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styleLancer.css">
+    <title>Beacon</title>
+  </head>
+  <body>
+
+    <div class="topnav">
+      <a href="index.html" class="top">Home</a>
+      <a href="corona.html" class="top">Coronavirus</a>
+      <a href="aboutLancer.html" class="top">About</a>
+
+    </div>
+    <img src="coronalert.jpg" class = "logo" />
+
+    <div id="map">
+    </div>
+    <!-- creating a map -->
+    <script>
+
+    function initMap() {
+      var myLatLng = {lat: 40.7128, lng: 74.0060};
+
+      var beaconsMap = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: myLatLng
+      });
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+          initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+          beaconsMap.setCenter(initialLocation);
+        });
+      }
+      var marker;
+
+      google.maps.event.addListener(beaconsMap, 'click', function(event) {
+
+        placeMarker(event.latLng);
+
+      });
+
+      function placeMarker(location) {
+
+          marker = new google.maps.Marker({
+            position: location,
+            map: beaconsMap,
+            icon: {
+              url: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png"
+              }
+
+          }); }
+        }
+      </script>
+      <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEGT_AaHzBL33Jle1igZbx91tie25fl8w&callback=initMap">
+    </script>
+
+
+  </body>
+
+  <h1 class="titles">How to use coronalert</h1>
+  <p class="indexdetails">Click on your location to place a pin. Each yellow pin represents a location that has been exposed to corona virus. We utilize crowdsourcing techniques in order for it to make it possible for anyone, anywhere to inform people about the different locations that coronavirus may be located.</p>
+<div class="icons">
+<img src="virus.png">
+<img src="corona.jpeg">
+<img src="germs.jpeg">
+</div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/UO5RVi98MLA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</html>
